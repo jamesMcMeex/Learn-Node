@@ -1,0 +1,10 @@
+extends layout
+
+include mixins/_storeForm
+
+block content
+  .inner
+    //- Interpolate the page title with #{title} or h2= title
+    h2= title
+
+    +storeForm()
